@@ -37,7 +37,7 @@ h1 {
 }
 
 #menu_buttons {
-    height: 650px;
+    height: 75vh;
     width: 99.2vw;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
