@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Pixel Font';
+    src: url('../source/font.TTF') format('truetype');
+}
+
+body {
+    background-image: url('./images/scenario/hud/home_background.gif'); /* Caminho da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center center; /* Posiciona a imagem no centro */
+    background-attachment: fixed; /* Faz a imagem ficar fixa enquanto rola a página */
+}
+
+h1 {
+    font-family: "Pixel Font", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    font-size: 65px;
+    line-height: 30px;
+}
+
+.text_shadow {
+    text-shadow: 
+        -8px 8px 0 black,  
+         2px -2px 0 black,  
+        -2px  2px 0 black,  
+         2px  2px 0 black;  
+}
+
+#title_top {
+    color: brown;
+}
+
+#title_down {
+    color: #c3c3c3;
+}
+
+#menu_buttons {
+    height: 75vh;
+    width: 99.2vw;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Força as divs ficarem uma embaixo da outra */
+    gap: 10px; /* Espaçamento entre elas */
+}
+
+.button_element {
+    position: relative;
+    font-family: "Pixel Font", sans-serif;
+    text-align: center;
+    font-size: 28px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 95px;
+    width: 226px;
+    background-image: url(./images/scenario/hud/button.png);
+    background-size: cover;
+    border: none;
+    transition: all 0.2s ease; /* Suaviza a animação */
+}
+
+.button_element:hover {
+    height: 100px;
+    width: 240px;
+}
+
+#button_sound {
+    background-image: url("./images/scenario/hud/sound_button.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 5%;           /* Alinha ao fundo */
+    left: 4%;             /* Alinha à esquerda */
+    height: 65px;
+    width: 100px;
+}
