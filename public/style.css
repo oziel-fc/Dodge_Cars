@@ -4,10 +4,10 @@
 }
 
 body {
-    background-image: url('./images/scenario/hud/home_background.gif'); /* Caminho da imagem */
-    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
-    background-position: center center; /* Posiciona a imagem no centro */
-    background-attachment: fixed; /* Faz a imagem ficar fixa enquanto rola a página */
+    background-image: url('./images/scenario/hud/home_background.gif'); /* Image Path */
+    background-size: cover; /* Image cover all screen */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Fix the image */
 }
 
 h1 {
@@ -36,45 +36,76 @@ h1 {
     color: #c3c3c3;
 }
 
-#menu_buttons {
+#menu {
     height: 75vh;
     width: 99.2vw;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    flex-direction: column; /* Força as divs ficarem uma embaixo da outra */
-    gap: 10px; /* Espaçamento entre elas */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    flex-direction: column; /* divs align like column */
+    gap: 10px; /* Padding between divs */
 }
 
-.button_element {
+.btn_menu {
     position: relative;
     font-family: "Pixel Font", sans-serif;
     text-align: center;
     font-size: 28px;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
     height: 95px;
     width: 226px;
-    background-image: url(./images/scenario/hud/button.png);
+    background-image: url(./images/scenario/hud/default_btn.png);
     background-size: cover;
     border: none;
-    transition: all 0.2s ease; /* Suaviza a animação */
+    transition: all 0.2s ease; /* Smoothing the animation */
 }
 
-.button_element:hover {
+.btn_menu:hover {
     height: 100px;
     width: 240px;
 }
 
-#button_sound {
-    background-image: url("./images/scenario/hud/sound_button.png");
+#btn_sound {
+    background-image: url("./images/scenario/hud/sound_btn.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 5%;           /* Alinha ao fundo */
-    left: 4%;             /* Alinha à esquerda */
+    bottom: 60px;           /* Align in end */
+    left: 80px;             /* Align in left */
     height: 65px;
     width: 100px;
+    transition: all 0.2s ease;
 }
+
+#btn_sound:hover {
+    height: 74px;
+    width: 113px;
+}
+
+#btn_skin_selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/scenario/hud/skin_selector_btn.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 40px;           /* Align in end */
+    left: 225px;             /* Align in left */
+    height: 110px;
+    width: 147px;
+    transition: all 0.2s ease;
+}
+
+#btn_skin_selector_physics {
+    height: 65px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
