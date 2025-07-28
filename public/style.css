@@ -8,7 +8,48 @@ body {
     background-size: cover; /* Image cover all screen */
     background-position: center center; /* Centers the image */
     background-attachment: fixed; /* Fix the image */
+    overflow-x: hidden;
 }
+
+#car_gif_left {
+    position: absolute;
+    transform: translateX(-200px);
+    top: 36px;
+    display: inline-block;
+    background-image: url("./images/scenario/hud/car_title.gif");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 42px;
+    width: 180px;
+    animation: gifToRight 1610ms linear;
+}
+
+@keyframes gifToRight {
+    to {
+      transform: translateX(100vw);
+    }
+}
+
+/* #car_gif_right {
+    position: absolute;
+    transform: translateX(-200px);
+    top: 36px;
+    display: inline-block;
+    background-image: url("./images/scenario/hud/car_title.gif");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 42px;
+    width: 180px;
+    animation: gifToRight 1610ms linear;
+}
+
+@keyframes gifToRight {
+    to {
+      transform: translateX(100vw);
+    }
+} */
 
 h1 {
     font-family: "Pixel Font", sans-serif;
@@ -20,20 +61,36 @@ h1 {
     line-height: 30px;
 }
 
+#title_top {
+    color: brown;
+    transform: translateX(-69%);
+    animation: leftToCenter 1000ms linear forwards;
+}
+
+@keyframes leftToCenter {
+    to {
+        transform: translateX(0);
+    }
+}
+
+#title_down {
+    color: #c3c3c3;
+    transform: translateX(60%);
+    animation: rightToCenter 1000ms linear forwards;
+}
+
+@keyframes rightToCenter {
+    to {
+        transform: translateX(0);
+    }
+}
+
 .text_shadow {
     text-shadow: 
         -8px 8px 0 black,  
          2px -2px 0 black,  
         -2px  2px 0 black,  
          2px  2px 0 black;  
-}
-
-#title_top {
-    color: brown;
-}
-
-#title_down {
-    color: #c3c3c3;
 }
 
 #menu {
@@ -103,9 +160,26 @@ h1 {
 
 #btn_skin_selector_physics {
     height: 65px;
-    width: 100px;
+    width: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#credits {
+    background-image: url("./images/scenario/hud/credits.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    bottom: 40px;
+    right: 80px;
+    transition: all 0.2s ease;
+}
+
+#credits:hover {
+    height: 135px;
+    width: 135px;
+}
