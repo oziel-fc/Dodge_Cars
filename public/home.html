@@ -6,7 +6,7 @@
     <title>DodgeCars</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="">
-    <link rel="shortcut icon" href="./images/icon.png" type="icon">
+    <link rel="shortcut icon" href="./assets/icon.png" type="icon">
 </head>
 <body>
     <h1 id="title_top" class="text_shadow">DODGE</h1>
@@ -24,6 +24,18 @@
         <div id="credits">
         </div>
     </div>
-    <script src="index.js"></script>
+    <script>
+        const parent = document.getElementById('btn_skin_selector');
+        const child = document.getElementById('btn_skin_selector_physics');
+
+        child.addEventListener('mouseenter', () => {
+            parent.style.height = '123px';
+            parent.style.width = '164px';
+        });
+        child.addEventListener('mouseleave', () => {
+            parent.style.height = '110px';
+            parent.style.width = '147px';
+        });
+    </script>
 </body>
 </html>

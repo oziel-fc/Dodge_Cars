@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url('./images/scenario/hud/home_background.gif'); /* Image Path */
+    background-image: url('./assets/home/home_background.gif'); /* Image Path */
     background-size: cover; /* Image cover all screen */
     background-position: center center; /* Centers the image */
     background-attachment: fixed; /* Fix the image */
@@ -16,7 +16,7 @@ body {
     transform: translateX(-200px);
     top: 36px;
     display: inline-block;
-    background-image: url("./images/scenario/hud/car_title.gif");
+    background-image: url("./assets/home/title_animation_car.gif");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ h1 {
     align-items: center; /* Centers vertically */
     height: 95px;
     width: 226px;
-    background-image: url(./images/scenario/hud/default_btn.png);
+    background-image: url(./assets/home/default_btn.png);
     background-size: cover;
     border: none;
     transition: all 0.2s ease; /* Smoothing the animation */
@@ -125,7 +125,7 @@ h1 {
 }
 
 #btn_sound {
-    background-image: url("./images/scenario/hud/sound_btn.png");
+    background-image: url("./assets/home/sound_btn.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -146,7 +146,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./images/scenario/hud/skin_selector_btn.png");
+    background-image: url("./assets/home/skin_selector_btn.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@ h1 {
 }
 
 #credits {
-    background-image: url("./images/scenario/hud/credits.png");
+    background-image: url("./assets/home/credits.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
