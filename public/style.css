@@ -4,7 +4,11 @@
 }
 
 :root {
-    --title-gif-delay: 1610ms;
+    --title-animation-delay: 666ms;
+    --title-gif-delay: 1073ms;
+    --width-gif: 180px;
+    --height-gif: 42px;
+    --title-position-animation: 69%;
 }
 
 body {
@@ -35,8 +39,8 @@ h1 {
 
 #title_top {
     color: brown;
-    transform: translateX(-69%);
-    animation: leftToCenter 1000ms linear forwards;
+    transform: translateX(calc(-1 * var(--title-position-animation)));
+    animation: leftToCenter var(--title-animation-delay) linear forwards;
 }
 
 @keyframes leftToCenter {
@@ -47,8 +51,8 @@ h1 {
 
 #title_down {
     color: #c3c3c3;
-    transform: translateX(69%);
-    animation: rightToCenter 1000ms linear forwards;
+    transform: translateX(var(--title-position-animation));
+    animation: rightToCenter var(--title-animation-delay) linear forwards;
     animation-delay: var(--title-gif-delay);
 }
 
@@ -66,8 +70,8 @@ h1 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 42px;
-    width: 180px;
+    height: var(--height-gif);
+    width: var(--width-gif);
     animation: gifToRight var(--title-gif-delay) linear;
 }
 
@@ -80,14 +84,14 @@ h1 {
 #car_gif_right {
     position: absolute;
     transform: scaleX(-1); /*Inverted GIF*/
-    right: -180px;
+    right: calc(-1 * var(--width-gif));
     top: 115px;
     background-image: url("./assets/home/title_animation_car.gif");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 42px;
-    width: 180px;
+    height: var(--height-gif);
+    width: var(--width-gif);
     animation: gifToLeft var(--title-gif-delay) linear;
     animation-delay: var(--title-gif-delay);
 }
@@ -174,7 +178,7 @@ h1 {
 }
 
 #credits {
-    background-image: url("./assets/home/credits.png");
+    background-image: url("./assets/home/github_credits.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
