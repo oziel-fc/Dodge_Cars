@@ -11,12 +11,24 @@
     --title-position-animation: 69%;
 }
 
+#custom_cursor {
+    position: fixed;
+    height: 48px;
+    width: 48px;
+    pointer-events: none;
+    background-image: url(assets/icons/cursor.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
 body {
     background-image: url('./assets/home/home_background.gif'); /* Image Path */
     background-size: cover; /* Image cover all screen */
     background-position: center center; /* Centers the image */
     background-attachment: fixed; /* Fix the image */
     overflow-x: hidden;
+    cursor: none;
 }
 
 h1 {

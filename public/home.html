@@ -6,13 +6,14 @@
     <title>DodgeCars</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="">
-    <link rel="shortcut icon" href="./assets/icon.png" type="icon">
+    <link rel="shortcut icon" href="./assets/icons/icon.png" type="icon">
 </head>
 <body>
     <h1 id="title_top" class="text_shadow">DODGE</h1>
     <div id="car_gif_left"></div>
     <h1 id="title_down" class="text_shadow">CARS</h1>
     <div id="car_gif_right"></div>
+    <div id="custom_cursor"></div>
     <div id="menu">
         <div class="btn_menu" id="btn_start">START</div>
         <div class="btn_menu" id="btn_ranking">RANKING</div>
@@ -35,6 +36,12 @@
         child.addEventListener('mouseleave', () => {
             parent.style.height = '110px';
             parent.style.width = '147px';
+        });
+
+        document.addEventListener('mousemove', (event) => {
+            const cursor = document.getElementById('custom_cursor');
+            cursor.style.left = `${event.clientX}px`; /*clientX is position between border of page and mouse cursor*/
+            cursor.style.top = `${event.clientY}px`;
         });
     </script>
 </body>
