@@ -19,30 +19,12 @@
         <div class="btn_menu" id="btn_ranking">RANKING</div>
         <div id="btn_sound"></div>
         <div id="btn_skin_selector">
-            <div id="btn_skin_selector_physics">
-            </div>
+            <div id="btn_skin_selector_physics"></div>
         </div>
-        <div id="credits">
-        </div>
+        <div id="skin_selector_tab" class="tab hidden"></div>
+        <div id="credits"></div>
     </div>
-    <script>
-        const parent = document.getElementById('btn_skin_selector');
-        const child = document.getElementById('btn_skin_selector_physics');
-
-        child.addEventListener('mouseenter', () => {
-            parent.style.height = '123px';
-            parent.style.width = '164px';
-        });
-        child.addEventListener('mouseleave', () => {
-            parent.style.height = '110px';
-            parent.style.width = '147px';
-        });
-
-        document.addEventListener('mousemove', (event) => {
-            const cursor = document.getElementById('custom_cursor');
-            cursor.style.left = `${event.clientX}px`; /*clientX is position between border of page and mouse cursor*/
-            cursor.style.top = `${event.clientY}px`;
-        });
+    <script src="home.js">
     </script>
 </body>
 </html>

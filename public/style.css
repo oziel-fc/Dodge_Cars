@@ -19,7 +19,7 @@
     background-image: url(assets/icons/cursor.png);
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: 99;
 }
 
 body {
@@ -187,6 +187,24 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#skin_selector_tab {
+    background-image: url(assets/home/skin_tab.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 555px;
+    width: 1100px;
+    margin-bottom: 60px;
+    z-index: 1;   
+}
+
+.hidden {
+    display: none;
 }
 
 #credits {
