@@ -212,8 +212,8 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    top: calc(var(--skin-tab-height) / 19.35);      /* This ensures that the button has the correct spacing according to the size of the div (31px) */ 
-    right: calc(var(--skin-tab-height) / 21.41);    /* This ensures that the button has the correct spacing according to the size of the div (28px)*/
+    top: calc(var(--skin-tab-height) / 18.95);      /* This ensures that the button has the correct spacing according to the size of the div (31px) */ 
+    right: calc(var(--skin-tab-height) / 19.41);    /* This ensures that the button has the correct spacing according to the size of the div (28px)*/
     height: 32px;
     width: 32px;
     z-index: 2;
