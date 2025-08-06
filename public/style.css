@@ -11,6 +11,7 @@
     --title-position-animation: 69%;
     --skin-tab-width: 0px;
     --skin-tab-height: calc(var(--skin-tab-width) / 1.97);      /* This ensures that the div keeps the 2:1 aspect ratio */
+    --ranking-tab-size: 0px;
 }
 
 #custom_cursor {
@@ -191,6 +192,33 @@ h1 {
     align-items: center;
 }
 
+#ranking_tab {
+    background-image: url(assets/ui_images/ranking_tab.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: var(--ranking-tab-size);
+    width: var(--ranking-tab-size);
+    margin-bottom: 60px;
+    z-index: 1;  
+}
+
+#close_ranking_tab {
+    background-image: url(assets/ui_images/close_btn.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: calc(var(--skin-tab-height) / 19.35);      /* This ensures that the button has the correct spacing according to the size of the div (31px) */ 
+    right: calc(var(--skin-tab-height) / 21.41);    /* This ensures that the button has the correct spacing according to the size of the div (28px)*/
+    height: 32px;
+    width: 32px;
+    z-index: 2;
+}
+
 #skin_selector_tab {
     background-image: url(assets/ui_images/skin_tab.png);
     background-size: contain;
@@ -211,8 +239,8 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    top: calc(var(--skin-tab-height) / 17.93);      /* This ensures that the button has the correct spacing according to the size of the div */
-    right: calc(var(--skin-tab-height) / 19.85);    /* This ensures that the button has the correct spacing according to the size of the div */
+    top: calc(var(--skin-tab-height) / 17.93);      /* This ensures that the button has the correct spacing according to the size of the div (31px)*/
+    right: calc(var(--skin-tab-height) / 19.85);    /* This ensures that the button has the correct spacing according to the size of the div (28px)*/
     height: 32px;
     width: 32px;
     z-index: 2;

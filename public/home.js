@@ -27,9 +27,23 @@ document.getElementById("close_skin_tab").addEventListener("click", () => {
 });
 
 // making the skin_selector_tab reponsive
-document.documentElement.style.setProperty('--skin-tab-width', (window.innerWidth * 0.57) + 'px');
+document.documentElement.style.setProperty('--skin-tab-width', (window.innerWidth / 1.74) + 'px');      // 1100px
 window.addEventListener("resize", () => {
-    document.documentElement.style.setProperty('--skin-tab-width', (window.innerWidth * 0.57) + 'px');
+    document.documentElement.style.setProperty('--skin-tab-width', (window.innerWidth / 1.74) + 'px');
+});
+
+// ranking tab
+document.getElementById("btn_ranking").addEventListener("click", () => {
+    document.getElementById("ranking_tab").classList.remove("hidden");
+});
+document.getElementById("close_ranking_tab").addEventListener("click", () => {
+    document.getElementById("ranking_tab").classList.add("hidden");
+});
+
+// making the ranking_tab responsive
+document.documentElement.style.setProperty('--ranking-tab-size', (window.innerWidth / 3.2) + 'px');     // 600px
+window.addEventListener("resize", () => {
+    document.documentElement.style.setProperty('--ranking-tab-size', (window.innerWidth / 3.2) + 'px');
 });
 
 // credits
