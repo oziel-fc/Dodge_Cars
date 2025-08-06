@@ -25,3 +25,10 @@ document.getElementById("btn_skin_selector").addEventListener("click", () => {
 document.getElementById("close_skin_tab").addEventListener("click", () => {
     document.getElementById("skin_selector_tab").classList.add("hidden");
 });
+
+// Making the skin_selector_tab reponsive
+document.documentElement.style.setProperty('--skin-tab-width', (window.innerWidth * 0.57) + 'px');
+window.addEventListener("resize", () => {
+    document.documentElement.style.setProperty('--skin-tab-width', (window.innerWidth * 0.57) + 'px');
+});
+
