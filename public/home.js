@@ -26,9 +26,13 @@ document.getElementById("close_skin_tab").addEventListener("click", () => {
     document.getElementById("skin_selector_tab").classList.add("hidden");
 });
 
-// Making the skin_selector_tab reponsive
+// making the skin_selector_tab reponsive
 document.documentElement.style.setProperty('--skin-tab-width', (window.innerWidth * 0.57) + 'px');
 window.addEventListener("resize", () => {
     document.documentElement.style.setProperty('--skin-tab-width', (window.innerWidth * 0.57) + 'px');
 });
 
+// credits
+document.getElementById("credits").addEventListener("click", () => {
+    window.open("https://github.com/oziel-fc/Dodge_Cars", "_blank")
+});
