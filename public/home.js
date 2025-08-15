@@ -21,6 +21,7 @@ document.addEventListener('mousemove', (event) => {
 // skin_selector tab
 document.getElementById("btn_skin_selector").addEventListener("click", () => {
     document.getElementById("skin_selector_tab").classList.remove("hidden");
+    document.getElementById("ranking_tab").classList.add("hidden");     // ensures that no overlap
 });
 document.getElementById("close_skin_tab").addEventListener("click", () => {
     document.getElementById("skin_selector_tab").classList.add("hidden");
@@ -35,6 +36,7 @@ window.addEventListener("resize", () => {
 // ranking tab
 document.getElementById("btn_ranking").addEventListener("click", () => {
     document.getElementById("ranking_tab").classList.remove("hidden");
+    document.getElementById("skin_selector_tab").classList.add("hidden");       // ensures that no overlap
 });
 document.getElementById("close_ranking_tab").addEventListener("click", () => {
     document.getElementById("ranking_tab").classList.add("hidden");
